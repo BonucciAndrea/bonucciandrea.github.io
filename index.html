@@ -22,7 +22,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Andrea Bonucci</h1>
-								<p>Mathematics graduate studying Quantitative Finance and Risk Management at Bocconi University</p>
+								<p>Mathematician and quant, working as a Trading Systems Analyst at FinIQ in London</p>
 							</div>
 						</div>
 						<nav>
@@ -48,7 +48,8 @@
 								<span class="image main" style="display: flex; justify-content: center;">
 									<img src="images/icon.png" alt="" style="width: 50%; height: auto;" />
 								</span>
-								<p>Hi! My name is Andrea and I am a mathematics student interested in the following subjects:
+								<p>Hi! My name is Andrea and I am a Trading Systems Analyst at <a href="https://www.finiq.com" target="_blank">FinIQ</a> in London, where I build and validate pricing models for FX vanilla and exotic options and work with sales and institutional clients on OTC structured products. Before that I did an internship in Fixed Income Sales at Mediobanca in Milan, and I completed the MSc in Quantitative Finance and Risk Management (MAFINRISK) at Bocconi University in September 2025. You can download my CV <a href="Andrea_Bonucci.pdf" target="_blank">here</a>.</p>
+								<p>I studied mathematics first, and I am still interested in the following subjects:
 									 <div>
 										<ul>
 										<li>rings and fields theory,</li>
@@ -63,9 +64,9 @@
 										<li>financial mathematics;</li>
 										</ul> 
 										</div>
-										and I'm currently following the Specialized Master in Quantitative Finance and Risk Management (MAFINRISK), at Bocconi University.</p>
-								<p>I've written my Bachelor thesis on the combinatorial aspects of surface Cluster algebras and applications to Frobenius' conjecture; which has been awarded a 9 out of 10 grade, which you can read <a href="Bachelor_Thesis.pdf" target="_blank">here</a>! As far as other interests, I'm an avid gym bro and have currently been on a bodybuilding track since Semptember 2022, and I also really enjoy travelling!</p>
-								<p>On the side I am also learning <a href="https://github.com/kevinlawler/kona">Kona</a>, in order to optimize my Python <a href="https://github.com/BonucciAndrea/BlackScholesExpectedMove">script</a> (for calculating expected move of a stock using option prices), as well as applying it to the high-frequency trading sector. For fun, I am also doing <a href="https://projecteuler.net">ProjectEuler</a> problems (friend key: 1885079_du9SO9rxCr4OmSodYjJS96zZHxH1cGKy). <a href="ProjectEulerInKona.pdf" target="_blank">Here</a> are some solutions written in Kona!</p>
+										</p>
+								<p>I've written my Bachelor thesis at Vrije Universiteit Amsterdam on the combinatorial aspects of surface Cluster algebras and applications to Frobenius' conjecture; which has been awarded a 9 out of 10 grade, which you can read <a href="Bachelor_Thesis.pdf" target="_blank">here</a>! As far as other interests, I'm an avid gym bro and have been on a bodybuilding track since September 2022, and I also really enjoy travelling!</p>
+								<p>I started learning <a href="https://github.com/kevinlawler/kona">Kona</a> to optimize my Python <a href="https://github.com/BonucciAndrea/BlackScholesExpectedMove">script</a> (for calculating expected move of a stock using option prices), and K has since become my main language: I now write K3, K6 and kdb+/q, both at work and on the side. Most of my free time goes into <a href="https://github.com/BonucciAndrea/amber">Amber</a>, my own array language written in C, with documentation at <a href="https://amber-lang.org" target="_blank">amber-lang.org</a>. For fun, I am also doing <a href="https://projecteuler.net">ProjectEuler</a> problems (friend key: 1885079_du9SO9rxCr4OmSodYjJS96zZHxH1cGKy). <a href="ProjectEulerInKona.pdf" target="_blank">Here</a> are some solutions written in Kona!</p>
 							</article>
 
 
@@ -75,6 +76,55 @@
 							<article id="work">
 								<h2 class="major">Work</h2>
 								<span class="image main"><img src="images/surfaces.jpg" alt="" /></span>
+
+									<h2>
+									  Trading Systems Analyst, FinIQ (London, Mar 2026 – present)
+									</h2>
+									<p class="paragraph">
+									  I develop and maintain production pricing models for FX vanilla and exotic options (barriers, digitals, TARFs, accumulators) in FinIQ's hybrid pricing engine, construct volatility surfaces and implement stochastic and local volatility models. I engineered an automated validation and stress-testing framework for an SLV pricing API: model-free no-arbitrage checks (put-call and in/out parity, Greek identities, finite-difference sensitivities), generated stress scenarios and per-RFQ audit reports. I use K (kdb+/q, K3, K6) for time-series modelling and analysis of pricing and market data, partner with sales and institutional clients on pricing and electronic execution of OTC structured products across FX and equity derivatives, and deliver quant sessions on pricing complex structured product payoffs and on random number generation for Monte Carlo simulation, to audiences of up to ~200.
+									</p>
+
+									<h2>
+									  Fixed Income Sales Intern, Mediobanca (Milan, Jul 2025 – Dec 2025)
+									</h2>
+									<p class="paragraph">
+									  Produced market reports, trade analysis and pricing support for institutional clients, and worked with the trading desk on market trends and liquidity.
+									</p>
+
+									<h2>
+									  Software Developer, marXact (Hilversum, Sep 2023 – Apr 2024)
+									</h2>
+									<p class="paragraph">
+									  Developed real-time signal-processing software in Python for GNSS receivers, using tilt compensation to improve positioning accuracy in low-visibility environments, and implemented an Extended Kalman Filter (EKF) for real-time state estimation in a non-linear system.
+									</p>
+
+									<h2>
+									  <a href="https://github.com/BonucciAndrea/amber" target="_blank">Amber</a>
+									</h2>
+									<p class="paragraph">
+									  A small, fast array language that talks like q: dictionaries, tables and keyed tables, the whole join family (including as-of and window joins), qSQL, tick data and dates, in one self-contained C binary built on ngn/k. Column attributes are implemented in C, tables can live on disk as memory-mapped column files, and big queries run across every core. It is on release 2.7.2 with 1,555 test cases, and around it sit Python bindings, an Arrow stream, a Jupyter kernel, a VS Code language server, a Grafana datasource, a profiler and an offline AI co-pilot. You can try it in the browser at <a href="https://amber-lang.org" target="_blank">amber-lang.org</a>.
+									</p>
+
+									<h2>
+									  <a href="https://github.com/BonucciAndrea/kdb-hft-tickerplant" target="_blank">HFT Options Tickerplant</a> (kdb+/q)
+									</h2>
+									<p class="paragraph">
+									  A distributed, fault-tolerant kdb+ tick architecture: tickerplant (logging and routing), in-memory RDB, on-disk HDB and a parallel unified gateway. A simulated market data feed of 20,000 updates/sec stress-tests tickerplant stability and the RDB-to-HDB end-of-day flush, and an asynchronous, parallel gateway query handler merges historical and real-time data in a single query.
+									</p>
+
+									<h2>
+									  <a href="https://github.com/BonucciAndrea/KStrategies" target="_blank">High-Frequency Backtesting Engine</a> (K3, K6, kdb+/q)
+									</h2>
+									<p class="paragraph">
+									  A zero-loop, fully vectorised backtesting engine in pure K, ported to kdb+/q to leverage its C-optimised vector primitives. An O(N) prefix-sum and boolean-masking pipeline drives the parameter grid searches, evaluating 8.1 billion matrix operations over 164,000+ data points; parallelised across 10 threads with q's peach, it peaks at about 2.34 billion ops/sec (3.4 s end to end).
+									</p>
+
+									<h2>
+									  Option pricers in K
+									</h2>
+									<p class="paragraph">
+									  <a href="https://github.com/BonucciAndrea/FXOptionsPricingK" target="_blank">Garman-Kohlhagen FX option pricing</a> with delta and vega, closed-form <a href="https://github.com/BonucciAndrea/AmericanBarrierOptionsK" target="_blank">barrier option pricing</a> covering all sixteen Reiner-Rubinstein cases, and a <a href="https://github.com/BonucciAndrea/BlackScholesK" target="_blank">Black-Scholes</a> calculator, all written in K with a hand-built normal CDF.
+									</p>
 
 
 									<h2>
@@ -187,7 +237,7 @@
 									</ul>
 								</form>
 								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/andrea-bonucci-152463215/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://www.linkedin.com/in/andrea-bonucci/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 									<li><a href="https://github.com/BonucciAndrea" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</article>
